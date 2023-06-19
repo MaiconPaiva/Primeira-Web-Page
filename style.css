@@ -1,0 +1,182 @@
+*{box-sizing: border-box;}
+*{margin: 0;}
+
+header{
+    width: 100vw; height: 5vh;
+    padding: 5px 1px;
+    display: inline;
+}
+#img-header{
+    width: 330px;
+    right: 40%;/*FORMATAÇÃO NOVA*/
+    top: -10%;/*FORMATAÇÃO NOVA*/
+    /*transform: translate(630px,-55px); ESSA FORMATAÇÃO ESTAVA CERTA NA MINHA TELA*/
+    object-fit: cover;
+    position: absolute;
+}
+.titulo{
+    font-size: 50px;
+    letter-spacing: 2.5px;
+    font-family: 'Creepster';
+    color: darkgoldenrod;
+    text-shadow: 3px 3px 5px rgb(87, 64, 7);
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+/*.titulo::after{
+    content: url(./img/raio.png);
+}*/
+main{
+    height: 100vh;
+    width: 99vw;
+    margin-top: 170px;
+    margin-bottom: 150px;
+}
+
+body{
+    width: 98vw;
+    background-color: rgba(0, 0, 0, 0.988);
+}
+#img-backhome{
+    position: absolute;
+    opacity: 70%;
+}
+#img-backhome:hover{
+    opacity: 100%;
+    transform: scale(1.5,1.5);
+    cursor: none;
+    margin-left: 40px;
+}
+
+#wallpaper{
+    height: 100vh;
+    width: 100vw;
+    opacity: 50%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1,1.2);
+}
+
+.container{
+    padding: 5px;
+    height: 700px;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*space-between estava bom mas aberto demais*/
+    flex-direction: row;
+}
+.games{ /* 3 gifs de games da home*/
+    height: 350px;
+    width: 95vw;
+    margin-left: 40px;
+}
+
+#game1{
+    position: static;
+    align-self: flex-start;
+    transform: scale(1.1,1.1);
+}
+
+#game2{
+    position: static;
+    align-self: center;
+    transform: scale(1,1.1);
+}
+
+#game3{
+    position: static;
+    align-self: flex-start;
+    transform: scale(1,1.2);
+}
+
+/*---------------------------------*/
+
+#info{
+    background-color: rgba(7, 5, 0, 0.100);
+    color: darkorange;
+    text-shadow: 0 0 4px orangered;
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    word-spacing: 1.5px;
+    margin-left: 70%;
+    margin-right: 1px;
+    display: flex;
+    right: 0;
+    top: 18%;
+}
+#resumo{
+    background-color: rgba(7, 5, 0, 0.100);
+    color: darkorange;
+    text-shadow: 0 0 4px orangered;
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    margin-left: 70%;
+    margin-right: 1px;
+    margin-top: 5px;
+    display: absolute;
+    top: 34%;
+    right: 0;
+}
+strong{
+    color: rgb(255, 140, 0);
+    text-shadow: 0 0 3px orangered;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+#img-resumo{/*ALINHAR IMAGEM À DIREITA*/
+    position: absolute;
+    right: 0;
+    height: 180px;
+    width: 280px;
+    opacity: 90%;
+    border-radius: 8px;
+}
+
+.tv-video{
+    position: relative;
+}
+.tv{
+    display: flex;
+    position: absolute;
+    width: 800px; height: 700px;
+    right: 0;
+    top: 340px;
+    opacity: 75%;
+}
+.video{
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 100px;
+    right: 11%;
+    top: 550px;
+    width: 530px; height: 365px;
+    opacity: 70%;
+    box-shadow: 0px 0px 20px 40px rgba(245, 245, 245, 0.596);
+}
+
+/*---------------------------------*/
+footer{
+   height: 10vh;
+   width: 100vw;
+   margin: 5px 1px;
+   background-image: url('./img/raio.girando.gif');
+   background-repeat: repeat-x;
+   background-size: 60px;
+   display: block;
+}
+
+.copyright{ /*arrumar posição*/
+    color: lavender;
+    font-size: 12px;
+    text-align: center;
+    bottom: 0px;
+    right: 50%;
+    margin: 0 auto;
+    transform: translate(0,70px);/*precisei alterar a posição à força*/
+}
